@@ -1,0 +1,18 @@
+logging:
+  path: logs
+  file: ${logging.path}/spring-boot-logger.log
+
+management:
+  endpoints:
+    web:
+      base-path: "/"
+      exposure:
+        include: "*"
+    threaddump:
+      enabled: true
+    metrics:
+      enabled: true
+    info:
+      enabled: true
+    logfile:
+      enabled: true
